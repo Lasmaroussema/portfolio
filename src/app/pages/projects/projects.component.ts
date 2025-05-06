@@ -30,50 +30,50 @@ export class ProjectsComponent {
   projects: Project[] = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A full stack e-commerce platform with product catalog, cart functionality, and secure payment processing.',
-      imageUrl: '/assets/images/project1.jpg',
-      technologies: ['Angular', 'Node.js', 'Express', 'MongoDB', 'Stripe API'],
-      liveUrl: 'https://example.com/project1',
-      githubUrl: 'https://github.com/yourusername/project1'
+      title: 'Automating Kubernetes Deployments with GitOps: A Practical Guide Using ArgoCD',
+      description: 'This practical guide walks you through setting up continuous delivery pipelines, automating deployments, and managing your infrastructure as code.',
+      imageUrl: 'https://miro.medium.com/v2/resize:fit:1200/1*TkYyNHK5mOdEHqPza86Ntw.png',
+      technologies: ['Argocd', 'Kubernetes', 'Github', 'Prometheus'],
+      liveUrl: 'https://medium.com/p/decdf4fde8aa',
+      githubUrl: ''
     },
     {
       id: 2,
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates and team collaboration features.',
-      imageUrl: '/assets/images/project2.jpg',
-      technologies: ['React', 'Firebase', 'Tailwind CSS', 'WebSockets'],
-      liveUrl: 'https://example.com/project2',
-      githubUrl: 'https://github.com/yourusername/project2'
+      title: 'Automating CI/CD with Jenkins, GitHub, Docker Hub, and Kubernetes',
+      description: 'Master the automation of your CI/CD pipeline using Jenkins, GitHub, Docker Hub, and Kubernetes. This guide covers building, testing, and deploying applications seamlessly, ensuring faster releases and greater reliability.',
+      imageUrl: 'https://user-images.githubusercontent.com/58173938/197373162-1f510766-4437-41ba-b6f8-deead93c7693.png',
+      technologies: ['Jenkins', 'Docker', 'Github', 'WebHooks','Kubernetes'],
+      liveUrl: 'https://medium.com/@lasmaroussama88/automating-ci-cd-with-jenkins-github-docker-hub-and-kubernetes-c5e349683f2d',
+      githubUrl: ''
     },
     {
       id: 3,
-      title: 'Finance Dashboard',
-      description: 'An interactive dashboard for financial data visualization with advanced filtering and reporting.',
-      imageUrl: '/assets/images/project3.jpg',
-      technologies: ['Angular', 'Spring Boot', 'PostgreSQL', 'D3.js', 'Docker'],
-      liveUrl: 'https://example.com/project3',
-      githubUrl: 'https://github.com/yourusername/project3'
+      title: 'Hotel Management System',
+      description: 'A comprehensive Hotel Management System designed to handle room bookings, customer check-ins/check-outs, billing, and staff management — all through a user-friendly interface that streamlines hotel operations.',
+      imageUrl: 'https://shorturl.at/uw169',
+      technologies: ['Sockets','RMI','Java'],
+      liveUrl: '',
+      githubUrl: 'https://github.com/Lasmaroussema/Hotel-Management'
     },
     {
       id: 4,
-      title: 'Health & Fitness Tracker',
-      description: 'A mobile-first application for tracking health metrics, workouts, and nutritional data.',
-      imageUrl: '/assets/images/project4.jpg',
-      technologies: ['Angular', 'Ionic', 'Node.js', 'MongoDB', 'Chart.js'],
-      liveUrl: 'https://example.com/project4',
-      githubUrl: 'https://github.com/yourusername/project4'
+      title: 'ChatApp angular spring boot',
+      description: 'A real-time ChatApp built with Angular for the frontend and Spring Boot for the backend, enabling seamless messaging, user authentication, and efficient communication in a secure and responsive environment.',
+      imageUrl: 'https://img.freepik.com/vecteurs-premium/modele-conception-logo-application-chat-peut-etre-utilise-icone-pour-logo-application-chat_605910-1724.jpg',
+      technologies: ['Angular', 'Spring Boot', 'Flask', 'Mysql', 'WebSockets'],
+      liveUrl: '',
+      githubUrl: 'https://github.com/Lasmaroussema/chatapp-angular-spring'
     },
     {
       id: 5,
-      title: 'Content Management System',
-      description: 'A custom CMS with role-based access control, content scheduling, and SEO optimization tools.',
-      imageUrl: '/assets/images/project5.jpg',
-      technologies: ['Angular', 'Java', 'Spring Boot', 'MySQL', 'AWS S3'],
-      liveUrl: 'https://example.com/project5',
-      githubUrl: 'https://github.com/yourusername/project5'
+      title: 'ChatBot with custom training',
+      description: 'An intelligent ChatBot powered by custom training data, designed to provide accurate, domain-specific responses. Easily adaptable to business needs with continuous learning and integration into various platforms.',
+      imageUrl: 'https://media.istockphoto.com/id/1445426863/fr/vectoriel/concept-de-conception-de-logo-vectoriel-chat-bot.jpg?s=612x612&w=0&k=20&c=HMIHtjqCnZ0ajOCUrJnHlaAh8Fj1_ubPieZ1P9unoWo=',
+      technologies: ['Flask','Python','Json'],
+      liveUrl: '',
+      githubUrl: 'https://github.com/Lasmaroussema/ChatBot-with-custom-trainning'
     },
-    {
+    /*{
       id: 6,
       title: 'Real-time Chat Application',
       description: 'A real-time messaging platform with private channels, file sharing, and message history.',
@@ -81,6 +81,6 @@ export class ProjectsComponent {
       technologies: ['Angular', 'Socket.io', 'Express', 'MongoDB', 'Redis'],
       liveUrl: 'https://example.com/project6',
       githubUrl: 'https://github.com/yourusername/project6'
-    }
+    }*/
   ];
 }

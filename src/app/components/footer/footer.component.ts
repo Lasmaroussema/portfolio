@@ -44,7 +44,7 @@ import { Component } from '@angular/core';
                 </svg>
               </a>
             </div>
-            <p class="text-slate-400 text-xs">Built with Angular & Tailwind CSS</p>
+            
           </div>
         </div>
       </div>
