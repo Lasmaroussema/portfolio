@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: JDSK
+  labels:
+    app: JDSK
+spec:
+  selector:
+    matchLabels:
+      app: JDSK
+  template:
+    metadata:
+      name: JDSK-app
+      labels:
+        app: JDSK
+    spec:
+      containers:
+        - name: JDSK
+          image: a
+          ports:
+            - containerPort: 4200
+  replicas: 1
