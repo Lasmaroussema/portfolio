@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "JDSK"
+        IMAGE_NAME = "jdsk"
     }
 
     stages {
