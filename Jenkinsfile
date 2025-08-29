@@ -19,6 +19,7 @@ pipeline {
                     sh "${scannerHome}/bin/sonar-scanner"
             }
         }
+        }
 
         stage('Docker Build & Push') {
             steps {
