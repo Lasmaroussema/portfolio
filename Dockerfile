@@ -17,7 +17,7 @@ RUN npm run build --prod
 FROM nginx:alpine
 
 
-COPY --from=build /usr/src/app/dist/porfolio /usr/share/nginx/html
+COPY --from=build /usr/src/app/dist/angular-train /usr/share/nginx/html
 
 
 EXPOSE 80
