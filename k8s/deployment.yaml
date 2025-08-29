@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: JDSK
+  name: jdsk
   labels:
-    app: JDSK
+    app: jdsk
 spec:
   selector:
     matchLabels:
-      app: JDSK
+      app: jdsk
   template:
     metadata:
-      name: JDSK-app
+      name: jdsk-app
       labels:
-        app: JDSK
+        app: jdsk
     spec:
       containers:
-        - name: JDSK
+        - name: jdsk
           image: lasmaroussema2428/jdsk:latest
           ports:
             - containerPort: 4200
