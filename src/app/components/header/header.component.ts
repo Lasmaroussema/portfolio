@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
       <div class="container mx-auto px-4 py-4">
         <div class="flex flex-col md:flex-row md:justify-between md:items-center">
           <div class="flex items-center mb-4 md:mb-0">
-            <a routerLink="/" class="text-2xl font-bold">DevPortfolio</a>
+            <a routerLink="/" class="text-2xl font-bold"></a>
           </div>
           
           <nav>

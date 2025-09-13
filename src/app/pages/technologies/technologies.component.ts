@@ -43,7 +43,20 @@ import { Technology } from '../../models/technology.model';
             }
           </div>
         </div>
+
+        <div class="mb-12">
+          <h3 class="text-xl font-bold mb-6 text-center">Security Tools</h3>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            @for (tech of SecurityTech; track tech.name) {
+              <app-tech-card [technology]="tech"></app-tech-card>
+            }
+          </div>
+        </div>
       </div>
+
+       
+      
+
     </section>
   `
 })
@@ -66,7 +79,7 @@ export class TechnologiesComponent {
     { name: 'MongoDB',url:'https://cdn.worldvectorlogo.com/logos/mongodb-icon-1-1.svg', icon: 'mongodb', experience: 'Advanced' },
     { name: 'PostgreSQL',url:'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png', icon: 'postgresql', experience: 'Intermediate' },
     { name: 'MySQL',url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWuqrVW9zyFVpwTWsxOST86VF2YrEoQaDRFt2PsL5osB-l8hShuU2uL9c3RIgO49PSPHk&usqp=CAU', icon: 'mysql', experience: 'Advanced' },
-    { name: 'GO',url:'https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Blue.png', icon: 'GO', experience: 'Intermediate' },
+    //{ name: 'GO',url:'https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Blue.png', icon: 'GO', experience: 'Intermediate' },
   ];
   
   devopsTech: Technology[] = [
@@ -78,6 +91,14 @@ export class TechnologiesComponent {
     { name: 'Linux',url:'https://cdn.freebiesupply.com/images/large/2x/linux-logo-png-transparent.png', icon: 'linux', experience: 'Advanced' },
     { name: 'Jenkins',url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt-3yO4QhP98fKmNe165I4Vp-cgw_CFYDOyw&s', icon: 'Jenkins', experience: 'Intermediate' },
     { name: 'ArgoCD',url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAeUOKnPBZx5HFooCNRwRLeM_zgzLH_Sy7cQ&s', icon: 'ArgoCD', experience: 'Intermediate' },
-    { name: 'Terraform',url:'https://static-00.iconduck.com/assets.00/terraform-icon-1803x2048-hodrzd3t.png', icon: 'Terraform', experience: 'Intermediate' },
+    { name: 'Terraform',url:'https://cdn.freelogovectors.net/wp-content/uploads/2022/01/terra-form-logo-freelogovectors.net_.png', icon: 'Terraform', experience: 'Intermediate' },
+    { name: 'Ansible',url:'https://images.icon-icons.com/2389/PNG/512/ansible_logo_icon_145495.png', icon: 'Ansible', experience: 'Intermediate' },
   ];
+
+  SecurityTech:Technology[]=[
+    { name: 'SonarQube',url:'https://cdn.worldvectorlogo.com/logos/sonarqube-1.svg', icon: 'SonarQube', experience: 'Intermediate' },
+    { name: 'Trivy',url:'https://desktop.docker.com/extensions/aquasec_trivy-docker-extension/raw_githubusercontent_com/aquasecurity/trivy-docker-extension/main/trivy.svg', icon: 'Trivy', experience: 'Intermediate' },
+    { name: 'Chechov',url:'https://raw.githubusercontent.com/bridgecrewio/checkov/main/docs/web/images/checkov_blue_logo.png', icon: 'Chechov', experience: 'Intermediate' },
+    { name: 'OWASP',url:'https://images.icon-icons.com/3913/PNG/512/owasp_logo_icon_248268.png', icon: 'OWASP', experience: 'Intermediate' },
+  ]
 }

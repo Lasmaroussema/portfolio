@@ -14,10 +14,10 @@ import { RouterLink } from '@angular/router';
         <div class="flex flex-col items-center text-center">
           <h1 class="text-5xl md:text-6xl font-bold mb-6">Lasmar Oussema</h1>
           <h2 class="text-2xl md:text-3xl mb-8">Full Stack Developer</h2>
-          <h2 class="text-2xl md:text-3xl mb-8">DevOps Enthusiast</h2>
+          <h2 class="text-2xl md:text-3xl mb-8">DevSecOps Engineer</h2>
           <p class="text-lg md:text-xl max-w-2xl mb-8">
             Passionate developer with expertise in building modern web applications.
-            Specialized in creating robust full-stack and DevOps solutions.
+            Specialized in creating robust DevOps solutions.
           </p>
           <div class="flex gap-4">
             <a routerLink="/projects" class="bg-white text-blue-700 px-6 py-3 rounded-md font-medium hover:bg-blue-50 transition-colors">View Projects</a>

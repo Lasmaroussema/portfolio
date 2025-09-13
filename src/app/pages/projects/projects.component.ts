@@ -29,6 +29,15 @@ import { Project } from '../../models/project.model';
 export class ProjectsComponent {
   projects: Project[] = [
     {
+      id: 0,
+      title: 'Automating infrastructure and deployment with terraform and ansible on Azure VM',
+      description: 'Automated infrastructure and deployment project that provisions a VM on Azure, configures it, and deploys a containerized application using Terraform and Ansible',
+      imageUrl: '/images/image copy.png',
+      technologies: ['Ansible', 'Terraform', 'Azure', ],
+      liveUrl: '',
+      githubUrl: 'https://github.com/Lasmaroussema/JAAT'
+    },
+    {
       id: 1,
       title: 'Automating Kubernetes Deployments with GitOps: A Practical Guide Using ArgoCD',
       description: 'This practical guide walks you through setting up continuous delivery pipelines, automating deployments, and managing your infrastructure as code.',
@@ -39,12 +48,12 @@ export class ProjectsComponent {
     },
     {
       id: 2,
-      title: 'Automating CI/CD with Jenkins, GitHub, Docker Hub, and Kubernetes',
+      title: 'Automating CI/CD with Jenkins,SonarQube, GitHub, Docker Hub, and Kubernetes',
       description: 'Master the automation of your CI/CD pipeline using Jenkins, GitHub, Docker Hub, and Kubernetes. This guide covers building, testing, and deploying applications seamlessly, ensuring faster releases and greater reliability.',
-      imageUrl: 'https://user-images.githubusercontent.com/58173938/197373162-1f510766-4437-41ba-b6f8-deead93c7693.png',
-      technologies: ['Jenkins', 'Docker', 'Github', 'WebHooks','Kubernetes'],
-      liveUrl: 'https://medium.com/@lasmaroussama88/automating-ci-cd-with-jenkins-github-docker-hub-and-kubernetes-c5e349683f2d',
-      githubUrl: ''
+      imageUrl: '/images/image.png',
+      technologies: ['Jenkins', 'Docker', 'Github', 'Kubernetes','SonarQube'],
+      liveUrl: '',
+      githubUrl: 'https://github.com/Lasmaroussema/portfolio'
     },
     {
       id: 3,
@@ -73,14 +82,6 @@ export class ProjectsComponent {
       liveUrl: '',
       githubUrl: 'https://github.com/Lasmaroussema/ChatBot-with-custom-trainning'
     },
-    /*{
-      id: 6,
-      title: 'Real-time Chat Application',
-      description: 'A real-time messaging platform with private channels, file sharing, and message history.',
-      imageUrl: '/assets/images/project6.jpg',
-      technologies: ['Angular', 'Socket.io', 'Express', 'MongoDB', 'Redis'],
-      liveUrl: 'https://example.com/project6',
-      githubUrl: 'https://github.com/yourusername/project6'
-    }*/
+    
   ];
 }
