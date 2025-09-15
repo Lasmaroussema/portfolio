@@ -15,7 +15,7 @@ import { CommonModule } from '@angular/common';
           <div class="flex flex-col md:flex-row gap-8 items-center md:items-start">
             <div class="w-48 h-48 rounded-full overflow-hidden flex-shrink-0">
               <img 
-                src="/images/my_pic.jpg" 
+                src="/images/me.png" 
                 alt="Profile Photo" 
                 class="w-full h-full object-cover"
               />

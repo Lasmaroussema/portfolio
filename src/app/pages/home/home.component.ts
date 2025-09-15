@@ -9,7 +9,7 @@ import { RouterLink } from '@angular/router';
     <section class="hero  text-white py-24" style="background-image: linear-gradient(to right,#8fbcbb,#8fbcbb);">
       <div class="container mx-auto px-4 flex justify-around">
         <div>
-          <img class="rounded-lg" src="/images/my_pic.jpg" width="440" height="440" alt="" srcset="">
+          <img class="rounded-lg" src="/images/me.png" width="440" height="440" alt="" srcset="">
         </div>
         <div class="flex flex-col items-center text-center">
           <h1 class="text-5xl md:text-6xl font-bold mb-6">Lasmar Oussema</h1>
