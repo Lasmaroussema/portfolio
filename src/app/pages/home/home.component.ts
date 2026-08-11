@@ -90,7 +90,7 @@ import { RouterLink } from '@angular/router';
                   <p class="pl-4"><span class="text-indigo-400">name</span>: <span class="text-emerald-400">'Lasmar Oussema'</span>,</p>
                   <p class="pl-4"><span class="text-indigo-400">role</span>: <span class="text-emerald-400">'Full Stack & DevSecOps'</span>,</p>
                   <p class="pl-4"><span class="text-indigo-400">status</span>: <span class="text-emerald-400">'Software Engineer '</span>,</p>
-                  <p class="pl-4"><span class="text-indigo-400">location</span>: <span class="text-emerald-400">'Sousse, Tunisia'</span>,</p>
+                  <p class="pl-4"><span class="text-indigo-400">location</span>: <span class="text-emerald-400">'Sfax, Tunisia'</span>,</p>
                   <p class="pl-4"><span class="text-indigo-400">skills</span>: [</p>
                   <p class="pl-8 text-amber-300">'Angular', 'Spring Boot', 'Node.js',</p>
                   <p class="pl-8 text-amber-300">'Docker', 'Kubernetes', 'ArgoCD',</p>
