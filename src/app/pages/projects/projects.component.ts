@@ -8,15 +8,17 @@ import { Project } from '../../models/project.model';
   standalone: true,
   imports: [CommonModule, ProjectCardComponent],
   template: `
-    <section class="py-20">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl font-bold mb-4">My Projects</h2>
-          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-            Here are some of the projects I've worked on. Each demonstrates different skills and technologies.
+    <section class="py-16 px-4">
+      <div class="max-w-6xl mx-auto space-y-12">
+        <div class="text-center space-y-4">
+          <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 dark:from-blue-400 dark:via-indigo-400 dark:to-purple-400 bg-clip-text text-transparent">
+            Featured Projects
+          </h1>
+          <p class="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+            A showcase of my recent work in DevOps automation, microservices, cloud infrastructure, and full-stack web applications.
           </p>
         </div>
-        
+
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           @for (project of projects; track project.id) {
             <app-project-card [project]="project"></app-project-card>
@@ -30,58 +32,57 @@ export class ProjectsComponent {
   projects: Project[] = [
     {
       id: 0,
-      title: 'Automating infrastructure and deployment with terraform and ansible on Azure VM',
-      description: 'Automated infrastructure and deployment project that provisions a VM on Azure, configures it, and deploys a containerized application using Terraform and Ansible',
+      title: 'Automating Infrastructure & Deployment with Terraform and Ansible on Azure VM',
+      description: 'Automated infrastructure provision project on Azure VM using Terraform and Ansible to deploy containerized applications effortlessly.',
       imageUrl: '/images/image copy.png',
-      technologies: ['Ansible', 'Terraform', 'Azure', ],
+      technologies: ['Ansible', 'Terraform', 'Azure', 'Docker'],
       liveUrl: '',
       githubUrl: 'https://github.com/Lasmaroussema/JAAT'
     },
     {
       id: 1,
-      title: 'Automating Kubernetes Deployments with GitOps: A Practical Guide Using ArgoCD',
-      description: 'This practical guide walks you through setting up continuous delivery pipelines, automating deployments, and managing your infrastructure as code.',
+      title: 'Automating Kubernetes Deployments with GitOps: Practical Guide Using ArgoCD',
+      description: 'Practical engineering guide walking through continuous delivery pipelines, automated deployments, and infrastructure as code with ArgoCD.',
       imageUrl: 'https://miro.medium.com/v2/resize:fit:1200/1*TkYyNHK5mOdEHqPza86Ntw.png',
-      technologies: ['Argocd', 'Kubernetes', 'Github', 'Prometheus'],
+      technologies: ['ArgoCD', 'Kubernetes', 'GitOps', 'Prometheus'],
       liveUrl: 'https://medium.com/p/decdf4fde8aa',
       githubUrl: ''
     },
     {
       id: 2,
-      title: 'Automating CI/CD with Jenkins,SonarQube, GitHub, Docker Hub, and Kubernetes',
-      description: 'Master the automation of your CI/CD pipeline using Jenkins, GitHub, Docker Hub, and Kubernetes. This guide covers building, testing, and deploying applications seamlessly, ensuring faster releases and greater reliability.',
+      title: 'Automating CI/CD with Jenkins, SonarQube, GitHub, Docker Hub, and Kubernetes',
+      description: 'Comprehensive automation of CI/CD pipelines using Jenkins, GitHub, Docker Hub, SonarQube, and Kubernetes for fast, reliable application releases.',
       imageUrl: '/images/image.png',
-      technologies: ['Jenkins', 'Docker', 'Github', 'Kubernetes','SonarQube'],
+      technologies: ['Jenkins', 'Docker', 'Kubernetes', 'SonarQube', 'Git'],
       liveUrl: '',
       githubUrl: 'https://github.com/Lasmaroussema/portfolio'
     },
     {
       id: 3,
       title: 'Hotel Management System',
-      description: 'A comprehensive Hotel Management System designed to handle room bookings, customer check-ins/check-outs, billing, and staff management — all through a user-friendly interface that streamlines hotel operations.',
-      imageUrl: 'https://shorturl.at/uw169',
-      technologies: ['Sockets','RMI','Java'],
+      description: 'Comprehensive Hotel Management System designed to handle room bookings, customer check-ins/check-outs, billing, and staff management.',
+      imageUrl: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=800&auto=format&fit=crop',
+      technologies: ['Java', 'Sockets', 'RMI', 'SQL'],
       liveUrl: '',
       githubUrl: 'https://github.com/Lasmaroussema/Hotel-Management'
     },
     {
       id: 4,
-      title: 'ChatApp angular spring boot',
-      description: 'A real-time ChatApp built with Angular for the frontend and Spring Boot for the backend, enabling seamless messaging, user authentication, and efficient communication in a secure and responsive environment.',
-      imageUrl: 'https://img.freepik.com/vecteurs-premium/modele-conception-logo-application-chat-peut-etre-utilise-icone-pour-logo-application-chat_605910-1724.jpg',
-      technologies: ['Angular', 'Spring Boot', 'Flask', 'Mysql', 'WebSockets'],
+      title: 'Real-time ChatApp with Angular & Spring Boot',
+      description: 'Real-time messaging platform built with Angular frontend and Spring Boot backend, featuring WebSocket communication and user authentication.',
+      imageUrl: 'https://images.unsplash.com/photo-1611606063665-ee7946f0787a?q=80&w=800&auto=format&fit=crop',
+      technologies: ['Angular', 'Spring Boot', 'MySQL', 'WebSockets'],
       liveUrl: '',
       githubUrl: 'https://github.com/Lasmaroussema/chatapp-angular-spring'
     },
     {
       id: 5,
-      title: 'ChatBot with custom training',
-      description: 'An intelligent ChatBot powered by custom training data, designed to provide accurate, domain-specific responses. Easily adaptable to business needs with continuous learning and integration into various platforms.',
-      imageUrl: 'https://media.istockphoto.com/id/1445426863/fr/vectoriel/concept-de-conception-de-logo-vectoriel-chat-bot.jpg?s=612x612&w=0&k=20&c=HMIHtjqCnZ0ajOCUrJnHlaAh8Fj1_ubPieZ1P9unoWo=',
-      technologies: ['Flask','Python','Json'],
+      title: 'Intelligent ChatBot with Custom Training Data',
+      description: 'AI ChatBot powered by custom domain training data, designed to deliver accurate context-aware responses and multi-platform integration.',
+      imageUrl: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=800&auto=format&fit=crop',
+      technologies: ['Python', 'Flask', 'JSON', 'AI/ML'],
       liveUrl: '',
       githubUrl: 'https://github.com/Lasmaroussema/ChatBot-with-custom-trainning'
-    },
-    
+    }
   ];
 }

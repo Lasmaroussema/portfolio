@@ -1,1 +1,65 @@
 @import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body, 
+  header, 
+  footer, 
+  section, 
+  nav, 
+  div, 
+  a, 
+  button, 
+  span, 
+  h1, h2, h3, h4, h5, h6, 
+  p {
+    transition-property: background-color, border-color, color, fill, stroke, box-shadow;
+    transition-duration: 400ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  body {
+    @apply bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 font-sans min-h-screen antialiased selection:bg-blue-500 selection:text-white;
+    background-image: radial-gradient(rgba(148, 163, 184, 0.2) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  html.dark body {
+    background-image: radial-gradient(rgba(59, 130, 246, 0.12) 1px, transparent 1px);
+  }
+}
+
+/* Glassmorphism & Developer Card Utilities */
+.glass-card {
+  @apply bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-xl;
+}
+
+.glass-card-hover {
+  @apply hover:border-blue-500/50 dark:hover:border-blue-500/50 hover:shadow-blue-500/10 hover:-translate-y-1;
+}
+
+.glass-nav {
+  @apply bg-white/90 dark:bg-slate-950/90 backdrop-blur-xl border-b border-slate-200/80 dark:border-slate-800/80;
+}
+
+/* Tech Icon Glow Container */
+.tech-icon-wrapper {
+  @apply relative p-3 rounded-xl bg-slate-100 dark:bg-slate-800/80 border border-slate-200/60 dark:border-slate-700/60 flex items-center justify-center group-hover:scale-110 group-hover:border-blue-500/50 group-hover:shadow-lg group-hover:shadow-blue-500/10;
+}
+
+/* Code Snippet Container Styling */
+.code-block {
+  @apply font-mono text-xs sm:text-sm bg-slate-900 text-slate-100 p-4 rounded-xl border border-slate-800 shadow-2xl overflow-x-auto;
+}
+
+/* View Transitions API Animations for Circular Ripple Reveal */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 500ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
